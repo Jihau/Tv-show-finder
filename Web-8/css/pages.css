@@ -1,0 +1,127 @@
+/*Hidden and visible classes*/
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+body {
+    font-family: 'Jura', sans-serif;
+    font-size: 11pt;
+    color: rgba(255, 255, 255, 0.67);
+    text-align: center;
+    border: 0;
+}
+
+.imageContainer {
+    padding-bottom: 50px;
+}
+
+.tableContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.tableContainer table {
+    border: #9bc2b8 solid;
+    border-collapse: separate;
+}
+
+.tableContainer table td {
+    border: #a7d9ce solid;
+    border-collapse: separate;
+    width: 40px;
+    height: 40px;
+}
+
+.tableContainer table th {
+    border: #a7d9ce solid;
+    border-collapse: separate;
+    height: 40px;
+    font-weight: bold;
+}
+
+.resultsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #1d2531;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(19, 32, 33, 0.94);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid #575757;  /* creates padding around scroll thumb */
+}
+button{
+    background-color: #212126;
+    color: white;
+    border: #adc9ce;
+    font-family: 'Jura', sans-serif;
+    font-size: 12pt;
+}
+#operator{
+    background-color: #212126;
+    color: white;
+}
+input[type=text]:active, input[type=text]:focus {
+    background-color: #212126;
+    color: white;
+}
+.hiddenLi{
+    display: none;
+    list-style-type: none;
+}
+a:link{
+    color: #bce5f3;
+    text-decoration: none;
+}
+a:visited{
+    color: #84969b;
+}
+.main-menu a:hover {
+    opacity: 0.3;
+    color: #84969b;
+    font-weight: bold;
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 30px;
+    padding-bottom: 10px;
+}
+
+#content article h1{
+    text-align: center;
+}
+.errorMsg{
+    text-align: center;
+    margin: auto 350px;
+}
+.summary{
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5px;
+}
+@media screen and (max-width: 900px) {
+    #content {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 900px) {
+    #content article{
+        width: 30%;
+        padding: 10px;
+    }
+}

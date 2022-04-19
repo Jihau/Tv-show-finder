@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Web-8</title>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <script>
+        function initMe(){
+            window.addEventListener('message', receiveMessage, false)
+        }
+        function receiveMessage(event) {
+            let logger = document.getElementById('console');
+            logger.value = event.data;
+        }
+        function clearConsole() {
+            let logger = document.getElementById('console');
+            logger.value = '';
+        }
+        window.onload = initMe;
+    </script>
+</head>
+<body>
+<div class="page">
+    <div class="nav_menu">
+        <div class="pageHeader">
+            <img src="img/title5.png" alt="title">
+        </div>
+    </div>
+    <div class="main_container">
+        <div class="pageContent">
+            <div class="main-menu">
+                <div class="home-button">
+                    <a href="blank.html" target="mainpage">
+                        <img src="img/home5.png" alt="home" width="23" height="23">
+                    </a>
+                </div>
+                <div>
+                    <input type="text" id="hakuteksti" name="q" placeholder="Search for tv shows...">
+                    <button id="hakunappi">Search</button>
+                </div>
+            </div>
+            <iframe name= "mainpage" src="blank.html" id="mainpage">
+            </iframe>
+        </div>
+        <div class="console-container">
+            <textarea rows="31" readonly id="console"></textarea>
+            <button id="clear" onclick="clearConsole()">Clear console</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

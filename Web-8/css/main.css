@@ -1,0 +1,185 @@
+BODY {
+    background-image: url("../img/background1.png");
+    background-size: 1920px;
+    background-repeat: repeat-y;
+    font-family: 'Jura', sans-serif;
+    font-size: 12pt;
+    color: #84969b;
+    text-align: center;
+}
+
+a:link{
+    color: #bce5f3;
+    text-decoration: none;
+}
+a:visited{
+    color: #84969b;
+}
+.main-menu a:hover {
+    opacity: 0.3;
+    color: #84969b;
+}
+
+.pageHeader{
+    float: top;
+    clear: none;
+    min-height: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 10px;
+}
+.pageHeader img {
+    width: 100%;
+    max-width: 808px;
+}
+
+.title-menu{
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+.main-menu{
+    position: relative;
+    top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-menu div {
+    display: flex;
+    vertical-align: center;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-button {
+    padding-bottom: 1px;
+    padding-right: 10px;
+}
+
+.nav_menu {
+    background-color: rgba(51, 51, 51, 0);
+    opacity: 0.9;
+    padding-bottom: 10px;
+}
+.nav_menu a {
+    float: initial;
+    margin: auto 10px;
+    display: block;
+    color: #84969b;
+    text-align: center;
+    text-decoration: none;
+}
+
+#mainpage{
+    border: 0;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    top: -30px;
+}
+#hakunappi{
+    background: rgba(28, 34, 42, 0.84);
+    color: #d8f6ff;
+    border-color: rgba(216, 246, 255, 0);
+    font-family: 'Jura', sans-serif;
+}
+#hakuteksti{
+    background: rgba(9, 14, 16, 0.78);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0);
+    font-family: 'Jura', sans-serif;
+}
+.console-container {
+    width: 300px;
+    height: 480px;
+    text-align: center;
+    min-width: 350px;
+}
+
+#console {
+    width: 300px;
+    height: 480px;
+    background-color: rgba(35, 37, 44, 0.75);
+    color: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(178, 255, 255, 0.58);
+    font-family: 'Jura', sans-serif;
+    resize: none;
+}
+
+#clear{
+    background: rgba(37, 45, 56, 0.84);
+    color: #d8f6ff;
+    border-color: rgba(216, 246, 255, 0);
+    font-family: 'Jura', sans-serif;
+}
+
+textarea::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #1d2531;        /* color of the tracking area */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(19, 32, 33, 0.94);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid #575757;  /* creates padding around scroll thumb */
+}
+.main_container {
+    display: flex;
+}
+@media screen and (max-width: 1350px) {
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .pageContent{
+        width: 90%;
+    }
+    .nav_menu {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1350px) {
+    .page {
+        margin: auto 350px;
+    }
+    #mainpage {
+        min-width: 1000px;
+    }
+    .pageContent{
+        min-width: 1000px;
+    }
+    .nav_menu {
+        width: 808px;
+        max-width: 808px;
+        margin-left: 85px;
+    }
+}
+.page {
+    display: block;
+    min-height: 800px;
+    box-sizing: border-box;
+}
+.pageContent{
+    background-color: rgba(35, 37, 44, 0.75);
+    float: left;
+    clear: none;
+    min-height: 600px;
+    max-height: 703px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid rgba(178, 255, 255, 0.58);
+    padding-bottom: 10px;
+}
+
+
+
+
